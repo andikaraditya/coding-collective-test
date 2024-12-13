@@ -51,7 +51,7 @@ class EmployeeController extends Controller
         if (!$employeeDetail) {
             return response()->json([
                 'message' => 'Employee detail not found.',
-            ], 400); 
+            ], 404); 
         }
 
         return response()->json([
@@ -66,7 +66,7 @@ class EmployeeController extends Controller
         if (!$employeeDetail) {
             return response()->json([
                 'message' => 'Employee detail not found.',
-            ], 400); 
+            ], 404); 
         }
 
         $validatedData = $request->validate([
@@ -89,7 +89,7 @@ class EmployeeController extends Controller
         if (!$employeeDetail) {
             return response()->json([
                 'message' => 'Employee detail not found.',
-            ], 400); 
+            ], 404); 
         }
 
         $employeeDetail->delete();

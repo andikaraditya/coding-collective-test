@@ -6,36 +6,19 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
 
-class EmployeeDetail extends Model
+class Attendance extends Model
 {
     use HasFactory, SoftDeletes;
 
-    protected $table = 'employee_detail'; // Specifies the table name
-
-    /**
-     * The attributes that are mass assignable.
-     *
-     * @var array
-     */
     protected $fillable = [
         'user_id',
-        'date_of_birth',
-        'city',
-    ];
-
-    /**
-     * The attributes that should be cast to native types.
-     *
-     * @var array
-     */
-    protected $casts = [
-        'date_of_birth' => 'date',
+        'attendance_at',
+        'type'
     ];
 
     protected $hidden = [
         'deleted_at'
     ];
-
 
     public function user()
     {
