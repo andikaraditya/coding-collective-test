@@ -28,8 +28,8 @@
 - body
 ```json
 {
-    "name": "john",
-    "email": "john@mail.com",
+    "name": "Rendra",
+    "email": "rendragituloh@gmail.com",
     "password": "password"
 }
 ```
