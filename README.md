@@ -1,3 +1,12 @@
+# How To Run App
+1. run `composer install`
+2. Create a postgres database with name `employee`
+3. Adjust the `.env` file
+4. run `php artisan migrate`
+5. run `php artisan db:seed`
+6. run `php artisan serve`
+
+
 # Documentation
 
 ## Auth
